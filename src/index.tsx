@@ -4,9 +4,12 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { registerMicroApps, start, setDefaultMountApp } from "qiankun";
+import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
@@ -37,5 +40,5 @@ registerMicroApps([
     },
   },
 ]);
-setDefaultMountApp("./sub_app2");
+setDefaultMountApp("./");
 start();
