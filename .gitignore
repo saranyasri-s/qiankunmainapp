@@ -10,7 +10,8 @@
 
 # production
 /build
-
+/sub_app1
+/sub_app2
 # misc
 .DS_Store
 .env.local
